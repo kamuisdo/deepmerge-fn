@@ -1,5 +1,5 @@
 {
- "name": "@kamuisdo/deepmerge",
+ "name": "@kamuisdo/deepmerge-fn",
  "version": "1.0.0",
  "description": "deepmerge js objects including function and array",
  "main": "dist/index.js",
