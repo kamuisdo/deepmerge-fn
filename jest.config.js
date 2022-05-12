@@ -4,7 +4,6 @@ module.exports = {
 		"**/?(*.)+(spec|test|unit).[jt]s?(x)" // 匹配测试文件
 	],
 	transform: {
-		"^.+\.[j|t]sx?$": "babel-jest",
-		"^.+\.tsx$": "ts-jest"
+		"^.+\.[j|t]sx?$": "babel-jest"
 	}
 };

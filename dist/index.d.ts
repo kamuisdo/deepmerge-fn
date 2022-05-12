@@ -1,3 +1,2 @@
-declare function sum(a: number, b: number): number;
-export default sum;
+export default function deepMerge(source: any, target: any, option?: any): any;
 //# sourceMappingURL=index.d.ts.map

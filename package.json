@@ -1,32 +1,42 @@
 {
-  "name": "@kamuisdo/deepmerge",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-	"scripts": {
-		"prepare": "husky install",
-		"start": "rollup -c rollup.config.js -w",
-		"test": "jest --coverage --config jest.config.js"
-	},
-  "author": "kamuisdo",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/jest": "^27.5.0",
-    "eslint": "^8.15.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^8.0.0",
-    "jest": "^28.1.0",
-    "lint-staged": "^12.4.1",
-    "prettier": "^2.6.2",
-    "rollup": "^2.72.1",
-    "rollup-plugin-typescript2": "^0.31.2",
-    "ts-jest": "^28.0.2",
-    "typescript": "^4.6.4"
-  },
-	"lint-staged": {
-		"src/**/*": [
-			"npx prettier --write src/"
-		]
-	}
+ "name": "@kamuisdo/deepmerge",
+ "version": "1.0.0",
+ "description": "deepmerge js objects including function and array",
+ "main": "dist/index.js",
+ "module": "dist/index.es.js",
+ "types": "dist/index.d.ts",
+ "scripts": {
+  "prepare": "husky install",
+  "start": "rollup -c rollup.config.js -w",
+  "test": "jest --coverage --config jest.config.js"
+ },
+ "author": "kamuisdo",
+ "license": "ISC",
+ "devDependencies": {
+  "@babel/core": "^7.17.10",
+  "@babel/preset-env": "^7.17.10",
+  "@babel/preset-typescript": "^7.16.7",
+  "@rollup/plugin-eslint": "^8.0.2",
+  "@types/jest": "^27.5.0",
+  "@types/lodash": "^4.14.182",
+  "babel-jest": "^28.1.0",
+  "eslint": "^8.15.0",
+  "eslint-config-prettier": "^8.5.0",
+  "eslint-plugin-prettier": "^4.0.0",
+  "husky": "^8.0.0",
+  "jest": "^28.1.0",
+  "lint-staged": "^12.4.1",
+  "prettier": "^2.6.2",
+  "rollup": "^2.72.1",
+  "rollup-plugin-typescript2": "^0.31.2",
+  "typescript": "^4.6.4"
+ },
+ "lint-staged": {
+  "src/**/*": [
+   "npx prettier --write src/"
+  ]
+ },
+ "dependencies": {
+  "lodash": "^4.17.21"
+ }
 }
